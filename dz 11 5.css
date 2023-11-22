@@ -1,0 +1,46 @@
+ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+      transition: 0.5s;
+    }
+
+    li {
+      float: left;
+    }
+
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    li a:hover {
+      background-color: #555;
+    }
+
+    li:hover {
+      background-color: #555;
+    }
+
+    li:hover ul {
+      display: block;
+    }
+
+    li ul {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+
+    li ul li {
+      float: none;
+      display: list-item;
+      position: relative;
+    }
